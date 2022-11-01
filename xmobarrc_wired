@@ -1,7 +1,6 @@
 Config {font = "xft:LiberationMono"
 commands = [
 Run Network "wlan0" ["-t", "W0: <rx>/<tx>K"] 10,
-Run Network "eth0" ["-t","E0: <rx>/<tx>K"] 10,
 Run Network "usb0" ["-t","U0: <rx>/<tx>K"] 10,
 Run Memory ["-t" ,"RAM: <usedratio>%"] 10,
 Run Volume "default" "Master" [] 10,
@@ -11,5 +10,5 @@ Run StdinReader
 ]
 , sepChar = "%"
 , alignSep = "}{"
-, template = "%StdinReader% }{|%wlan0%|%eth0%|%usb0%|%memory%|%default:Master%|%date%|%battery%"
+, template = "%StdinReader% }{|%wlan0%|%usb0%|%memory%|%default:Master%|%date%|%battery%"
 }
