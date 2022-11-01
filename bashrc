@@ -12,7 +12,7 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 
-##ReMove Not in Interactive mode
+##remove recursive
 alias rmre="rm -r"
 
 alias df="df -h"
