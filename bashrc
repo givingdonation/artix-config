@@ -7,13 +7,13 @@ alias battcap='cat /sys/class/power_supply/BAT0/capacity*'
 
 alias pm="sudo pacman"
 
+##remove recursive
+alias rmre="rm -r"
+
 ##interactive mode, just in case
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-
-##remove recursive
-alias rmre="rm -r"
 
 alias df="df -h"
 alias du="du -h"
