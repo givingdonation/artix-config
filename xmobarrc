@@ -1,0 +1,14 @@
+Config {font = "xft:LiberationMono"
+commands = [
+Run Wireless "wlan0" ["-t", "<essid>: <quality>"] 10,
+Run Network "wlan0" ["-t","W0: <rx>/<tx>K"] 10,
+Run Memory ["-t" ,"RAM: <usedratio>%"] 10,
+Run Volume "default" "Master" [] 10,
+Run Date "%a %b %_d %T" "date" 10,
+Run Battery ["-t","Batt: <left>%"] 10,
+Run StdinReader
+]
+, sepChar = "%"
+, alignSep = "}{"
+, template = "%StdinReader% }{|%wlan0wi%|%wlan0%|%memory%|%default:Master%|%date%|%battery%"
+}
