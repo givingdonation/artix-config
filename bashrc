@@ -20,3 +20,5 @@ alias bright="xrandr --output eDP1 --brightness"
 if [ $0 == "-bash" ]; then
 	exec startx
 fi
+
+[ -f "/home/carlo/.ghcup/env" ] && source "/home/carlo/.ghcup/env" # ghcup-env
